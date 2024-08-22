@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petroleum Forecasting</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Petroleum Forecasting</h1>
+</header>
+<main>
+    <section id="uploadSection">
+        <h2>Upload Data</h2>
+        <form id="dataForm">
+            <input type="file" id="fileInput" accept=".xlsx" />
+            <button type="button" onclick="uploadFile()">Upload</button>
+        </form>
+    </section>
+
+    <section id="forecastSection">
+        <h2>Forecast</h2>
+        <canvas id="forecastChart" width="600" height="400"></canvas>
+    </section>
+</main>
+<script src="assets/javascript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
